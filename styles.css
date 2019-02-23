@@ -155,5 +155,11 @@ body{
 			.description{
 				font-size: 9pt;
 			}
+
+	.window{
+		margin: 0;
+		height: 90%;
+		width: 50%;
+	}
 }
 
