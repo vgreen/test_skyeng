@@ -119,9 +119,9 @@ body{
 			width: 100%;
 		}
 			.button{
-				padding: 18px;
+				padding: 13px;
 				border-radius: 10px;
-				background: blue;
+				background: #0f52ba;
 				color: white;
 				text-align: center;
 			}
