@@ -110,7 +110,18 @@ body{
 				margin:0;
 				text-align: center;
 			}
-
+			.price{
+				margin-top: 20px;
+				display: flex;
+				color:#0f52ba;
+			}
+				.price_num{
+					font-size: 17pt;
+					font-weight: 500;
+				}
+				.period{
+					margin-top: 10px;
+				}
 		.button_holder{
 			margin-top: 30px;
 			display: flex;
@@ -162,7 +173,7 @@ body{
 	}
 }
 
-@media screen and (max-width: 855px) and (orientation: landscape) {
+@media screen and (max-height: 625px) and (orientation: landscape) {
 .wrapper{
 	margin: 0;
 	

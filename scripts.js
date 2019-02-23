@@ -6,7 +6,9 @@ class Component {
 		this.img = data.img
 		this.title = data.title
 		this.description = data.description
+		this.currency = data.currency
 		this.price = data.price
+		this.period = data.period
 
 		this.setDataInElement(this.element)
 
@@ -16,7 +18,9 @@ class Component {
 		elem.getElementsByClassName('pic_holder')[0].getElementsByTagName('img')[0].setAttribute('src', this.img)
 		elem.getElementsByClassName('title')[0].innerHTML = this.title
 		elem.getElementsByClassName('description')[0].innerHTML = this.description
-		elem.getElementsByClassName('price')[0].innerHTML = this.price
+		elem.getElementsByClassName('currency')[0].innerHTML = this.currency
+		elem.getElementsByClassName('price_num')[0].innerHTML = this.price
+		elem.getElementsByClassName('period')[0].innerHTML = this.period
 	}
 
 
@@ -44,19 +48,25 @@ let data = {
 		img: './img/device.svg',
 		title: 'MOBILE',
 		description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id optio, adipisci temporibus quae, explicabo ',
-		price: '$15/month'
+		currency: "$",
+		price: '15',
+		period: '/month'
 	},
 	desktop:{
 		img: './img/laptop.svg',
 		title: 'DESKTOP',
 		description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id optio, adipisci temporibus quae, explicabo ',
-		price: '$15/month'
+		currency: "$",
+		price: '15',
+		period: '/month'
 	},
 	tv:{
 		img: './img/monitor.svg',
 		title: 'TV',
 		description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id optio, adipisci temporibus quae, explicabo ',
-		price: '1$5/month'
+		currency: "$",
+		price: '15',
+		period: '/month'
 	}
 }
 
