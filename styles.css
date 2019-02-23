@@ -102,7 +102,7 @@ body{
 			text-align: center;
 		}
 
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 666px) and (orientation: portrait) {
 	
 	.container{
 		margin: 0;
@@ -118,7 +118,7 @@ body{
 		}
 			.title{
 				letter-spacing: 2pt;
-				font-size: 15pt;
+				font-size: 13pt;
 			}
 			.description{
 				font-size: 10pt;
@@ -135,7 +135,25 @@ body{
 	}
 }
 
-@media screen and (max-width: 666px) {
-
+@media screen and (max-width: 855px) and (orientation: landscape) {
+	.container{
+		margin: 0;
+		flex-direction: row;
+		height: calc(100% - 10px);
+		width: calc(100vw - 10px);
+		padding: 5px;
+		border-radius: 0px;
+	}
+		.element{
+			height: 90%;
+			width: 30%;
+		}
+			.title{
+				letter-spacing: 2pt;
+				font-size: 14pt;
+			}
+			.description{
+				font-size: 9pt;
+			}
 }
 
