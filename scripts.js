@@ -47,15 +47,15 @@ let data = {
 	mobile:{
 		img: './img/device.svg',
 		title: 'MOBILE',
-		description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id optio, adipisci temporibus quae, explicabo ',
+		description : 'Get notification about new releases in our mobile app ',
 		currency: "$",
-		price: '15',
+		price: '10',
 		period: '/month'
 	},
 	desktop:{
 		img: './img/laptop.svg',
 		title: 'DESKTOP',
-		description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id optio, adipisci temporibus quae, explicabo ',
+		description : 'Enjoy new epizodes on your laptop in browser with our web service, which supports all the platforms',
 		currency: "$",
 		price: '15',
 		period: '/month'
@@ -63,9 +63,9 @@ let data = {
 	tv:{
 		img: './img/monitor.svg',
 		title: 'TV',
-		description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id optio, adipisci temporibus quae, explicabo ',
+		description : 'Which your favorite series at home on large screen with our TV application',
 		currency: "$",
-		price: '15',
+		price: '20',
 		period: '/month'
 	}
 }
