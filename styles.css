@@ -52,65 +52,92 @@ body{
 	.cross img{
 		height: 100%;
 	}
-.container{
+
+.wrapper{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
 	padding: 40px;
 	height: 45vh;
 	width: 65%;
 	background: white;
-	display: flex;
-	justify-content: space-around;
 	border-radius: 10px;
 	box-shadow: 0 6px 15px rgba(40, 40, 40, .6);
 }
-
-
-
-	.element{
-		padding: 2%;
-		border-radius: 10px;
-		height: 90%;
-		width: 30%;
+	.container{
+		height: 80%;
 		display: flex;
-		flex-direction: column;
 		justify-content: space-around;
-		align-items: center;
+		
 	}
-	.element:hover{
-		background: #f4f4f4;
-	}
-	
 
-		.pic_holder{
-			margin: 0;
-			height: 50%;
+
+
+		.element{
+			padding: 2%;
+			border-radius: 10px;
+			height: 90%;
+			width: 30%;
 			display: flex;
+			flex-direction: column;
 			justify-content: space-around;
 			align-items: center;
+		}
+		.element:hover{
+			background: #f4f4f4;
+		}
+		
 
-		}
-		.pic_holder img{
-			height: 100%;
-		}
+			.pic_holder{
+				margin: 0;
+				height: 50%;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
 
-		.title{
-			letter-spacing: 2pt;
-			font-size: 20pt;
-		}
+			}
+			.pic_holder img{
+				height: 100%;
+			}
 
-		.description{
-			margin:0;
-			text-align: center;
+			.title{
+				letter-spacing: 2pt;
+				font-size: 20pt;
+			}
+
+			.description{
+				margin:0;
+				text-align: center;
+			}
+
+		.button_holder{
+			margin-top: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
 		}
+			.button{
+				padding: 18px;
+				border-radius: 10px;
+				background: blue;
+				color: white;
+				text-align: center;
+			}
 
 @media screen and (max-width: 666px) and (orientation: portrait) {
 	
+.wrapper{
+	height: calc(100% - 10px);
+	width: calc(100vw - 10px);
+	padding: 5px;
+	border-radius: 0px;
+}
 	.container{
 		margin: 0;
 		flex-direction: column;
-		height: calc(100% - 10px);
-		width: calc(100vw - 10px);
-		padding: 5px;
-		border-radius: 0px;
+		
 	}
 		.element{
 			height: 30%;
@@ -136,13 +163,16 @@ body{
 }
 
 @media screen and (max-width: 855px) and (orientation: landscape) {
+.wrapper{
+	margin: 0;
+	
+	height: calc(100% - 30px);
+	width: calc(100vw - 30px);
+	padding: 15px;
+	border-radius: 0px;
+}
 	.container{
-		margin: 0;
 		flex-direction: row;
-		height: calc(100% - 10px);
-		width: calc(100vw - 10px);
-		padding: 5px;
-		border-radius: 0px;
 	}
 		.element{
 			height: 90%;
