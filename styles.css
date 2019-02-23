@@ -1,0 +1,127 @@
+body{
+	background: #7c9ed3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Roboto;
+	margin: 0;
+	height: 100vh;
+}
+
+.shadow{
+	background: black;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	opacity: .4;
+	z-index: 30;
+	display: none;
+}
+.shadow.active{
+	display: block;
+}
+
+.window{
+	padding: 10px;
+	height: 450px;
+	width: 450px;
+	margin-top: 200px;
+	background: white;
+	display: none;
+	position: absolute;
+	z-index: 35;
+	border-radius: 10px;
+	box-shadow: 0 6px 15px rgba(40, 40, 40, .6);
+}
+
+.window.active{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+.cross_holder{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+.cross{
+	height: 30px;
+	cursor: pointer;
+}
+.cross img{
+	height: 100%;
+}
+.container{
+	padding: 40px;
+	height: 45vh;
+	width: 65%;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 10px;
+	box-shadow: 0 6px 15px rgba(40, 40, 40, .6);
+}
+
+
+
+	.element{
+		padding: 2%;
+		border-radius: 10px;
+		height: 90%;
+		width: 30%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.element:hover{
+		background: #f4f4f4;
+	}
+	
+
+		.pic_holder{
+			margin: 0;
+			height: 50%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+		}
+		.pic_holder img{
+			height: 100%;
+		}
+
+		.title{
+			letter-spacing: 2pt;
+			font-size: 20pt;
+		}
+
+		.description{
+			margin:0;
+			text-align: center;
+		}
+
+@media screen and (max-width: 666px) {
+	
+	.container{
+		margin: 0;
+		flex-direction: column;
+		height: calc(100% - 10px);
+		width: calc(100vw - 10px);
+		padding: 5px;
+		border-radius: 0px;
+	}
+
+	.element{
+		height: 30%;
+		width: 96%;
+	}
+	.window{
+		margin: 0;
+		height: 50%;
+		width: 90%;
+	}
+}
+
+
